@@ -10,7 +10,7 @@ resource_types:
 resources:
   - name: hello_hapi
     type: git
-    source: &repo-source
+    source:
       uri: https://github.com/therealsohail/hello_hapi
       branch: master
   - name: dependency-cache
