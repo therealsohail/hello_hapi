@@ -4,14 +4,14 @@ resource_types:
   - name: npm-cache
     type: docker-image
     source:
-      repository: ymedlop/npm-cache-resource
+      repository: https://github.com/ymedlop/npm-cache-resource
       tag: latest
 
 resources:
   - name: hello_hapi
     type: git
     source: &repo-source
-      uri: https://github.com/your_github_user/hello_hapi
+      uri: https://github.com/therealsohail/hello_hapi
       branch: master
   - name: dependency-cache
     type: npm-cache
